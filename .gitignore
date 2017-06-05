@@ -1,4 +1,6 @@
 *.vs
 *.vs*
 *.proj
-*.pyproj
+*.pyproj*
+*.sln
+*.gitattributes
