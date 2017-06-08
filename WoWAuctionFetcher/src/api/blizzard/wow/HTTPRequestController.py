@@ -7,11 +7,12 @@ class HTTPRequestController(object):
 		self.url = 'https://us.api.battle.net/wow/'
 		
 
-	def sendRequest(url, params):
-		url = url + '&api_key={}';
-		param.append(api_key);
-		response = requests.get(str.format(url, params));
-		return response.statusCode, json.loads(response.content);
+	def sendRequest(self, url, params):
+		url = url + '&apikey={}';
+		params.append(self.api_key);
+		response = requests.get(url.format(*params));
+		print(url.format(*params))
+		return response, json.loads(response.content);
 
 
 
