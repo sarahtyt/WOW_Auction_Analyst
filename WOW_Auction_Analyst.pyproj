@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9b38d0f5-7b7a-4174-8d53-a1258bc11ab5}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="data\auctions\2017-6-4-01.auc" />
+    <Content Include="data\auctions\2017-6-4-02.auc" />
+    <Content Include="data\auctions\2017-6-4-03.auc" />
+    <Content Include="data\auctions\2017-6-4-04.auc" />
+    <Content Include="data\auctions\2017-6-4-05.auc" />
+    <Content Include="data\auctions\2017-6-4-06.auc" />
+    <Content Include="data\auctions\2017-6-4-07.auc" />
+    <Content Include="data\auctions\2017-6-4-08.auc" />
+    <Content Include="data\auctions\2017-6-4-09.auc" />
+    <Content Include="data\auctions\2017-6-4-10.auc" />
+    <Content Include="data\auctions\2017-6-4-11.auc" />
+    <Content Include="data\auctions\2017-6-4-12.auc" />
+    <Content Include="data\auctions\2017-6-4-13.auc" />
+    <Content Include="data\auctions\2017-6-4-14.auc" />
+    <Content Include="data\auctions\2017-6-4-15.auc" />
+    <Content Include="data\auctions\2017-6-4-16.auc" />
+    <Content Include="data\auctions\2017-6-4-17.auc" />
+    <Content Include="data\auctions\2017-6-4-18.auc" />
+    <Content Include="data\auctions\2017-6-4-19.auc" />
+    <Content Include="data\auctions\2017-6-4-20.auc" />
+    <Content Include="data\items.itms" />
+    <Content Include="data\sample\test.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WoWAuctionFetcher\src\api\blizzard\wow\AuctionController.py" />
+    <Compile Include="WoWAuctionFetcher\src\api\blizzard\wow\HTTPRequestController.py" />
+    <Compile Include="WoWAuctionFetcher\src\api\blizzard\wow\ItemController.py" />
+    <Compile Include="WoWAuctionFetcher\src\model\Auction.py" />
+    <Compile Include="WoWAuctionFetcher\src\model\Item.py" />
+    <Compile Include="WoWAuctionFetcher\src\test.py" />
+    <Compile Include="WoWAuctionFetcher\src\WoWAuctionFetcher.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="data\auctions\" />
+    <Folder Include="data\sample" />
+    <Folder Include="WoWAuctionFetcher\" />
+    <Folder Include="WoWAuctionFetcher\src" />
+    <Folder Include="WoWAuctionFetcher\src\api\" />
+    <Folder Include="WoWAuctionFetcher\src\api\blizzard\" />
+    <Folder Include="WoWAuctionFetcher\src\api\blizzard\wow" />
+    <Folder Include="WoWAuctionFetcher\src\model" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
